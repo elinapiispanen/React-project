@@ -1,28 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
 import './components/Navigation';
 import Navigation from './components/Navigation';
 import { createMuiTheme, MuiThemeProvider, CssBaseline, Paper } from '@material-ui/core';
 import { lightGreen, grey, brown } from '@material-ui/core/colors'
-import SmallCard from './components/config/SmallCard';
+import AppBar from '@material-ui/core/AppBar';
+import CardRow from './components/config/CardRow';
+import ContactForm from './components/config/ContactForm';
+
 
 
 function App() {
   return (
     <MuiThemeProvider theme={theme}>
       <div className="App">
-        <Navigation />
+        <AppBar position="static">
+          <Navigation />
+        </AppBar>
 
         <header className="App-header">
           <p>
             MOI NIKI APINAVAUVA
         </p>
-         <SmallCard/>
-         <SmallCard/>
-         <SmallCard/>
-
+          <CardRow />
         </header>
 
+        <body className="App-body">
+          <ContactForm />
+        </body>
+        <footer className="App-footer">
+
+        </footer>
       </div>
     </MuiThemeProvider>
   );
