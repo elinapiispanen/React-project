@@ -1,37 +1,28 @@
 import './App.css';
-import './components/Navigation';
 import Navigation from './components/Navigation';
 import { createMuiTheme, MuiThemeProvider, CssBaseline, Paper } from '@material-ui/core';
 import { lightGreen, grey, brown } from '@material-ui/core/colors'
 import AppBar from '@material-ui/core/AppBar';
-import CardRow from './components/config/CardRow';
-import ContactForm from './components/config/ContactForm';
-
-
+import Home from './components/Home';
+import Moi from './components/config/Moi';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <MuiThemeProvider theme={theme}>
-      <div className="App">
-        <AppBar position="static">
-          <Navigation />
-        </AppBar>
-
-        <header className="App-header">
-          <p>
-            MOI NIKI APINAVAUVA
-        </p>
-          <CardRow />
-        </header>
-
-        <body className="App-body">
-          <ContactForm />
-        </body>
-        <footer className="App-footer">
-
-        </footer>
-      </div>
-    </MuiThemeProvider>
+    <BrowserRouter>
+      <MuiThemeProvider theme={theme}>
+        <div className="App">
+          <AppBar position="static">
+            <Navigation />
+          </AppBar>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/prod' component={Home} />
+            <Route path='/about' component={Moi} />
+          </Switch>
+        </div>
+      </MuiThemeProvider>
+    </BrowserRouter>
   );
 }
 
@@ -73,6 +64,11 @@ const theme = createMuiTheme({
     color: 'black',
     marginTop: 10,
     marginLeft: 30,
+  },
+  formContainer: {
+    marginTop: 40,
+    marginLeft: 20,
+    padding: 20,
   }
 
 });
