@@ -6,7 +6,8 @@ import ContactForm from '../components/config/ContactForm'
 function Home() {
     return (
         <>
-            <header className="App-header">
+
+            <header className="Home-header">
                 <p>
                     MOI NIKI APINAVAUVA
         </p>
@@ -16,9 +17,9 @@ function Home() {
                 <CardRow />
             </header>
 
-            <body className="App-body">
-                <ContactForm/>
-            </body>
+            <div className="Home-body">
+                <ContactForm />
+            </div>
             <footer className="App-footer">
             </footer>
         </>

@@ -1,0 +1,35 @@
+{
+    "products": [
+        {
+            "name": "product1",
+            "price": "100",
+            "description": "dkdkdkdk"
+        },
+        {
+            "name": "product2",
+            "price": "100",
+            "description": "dkdkdkdk"
+        },
+        {
+            "name": "product3",
+            "price": "100",
+            "description": "dkdkdkdk"
+        },
+        {
+            "name": "product4",
+            "price": "100",
+            "description": "dkdkdkdk"
+        },
+        {
+            "name": "product4",
+            "price": "100",
+            "description": "dkdkdkdk"
+        },
+        {
+            "name": "product4",
+            "price": "100",
+            "description": "dkdkdkdk"
+        }
+
+    ]
+}

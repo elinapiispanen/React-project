@@ -15,11 +15,6 @@ const useStyles = makeStyles((theme) => ({
     wrapper: {
         width: 200 + theme.spacing(2),
     },
-    paper: {
-        zIndex: 1,
-        position: 'relative',
-        margin: theme.spacing(1),
-    },
     svg: {
         width: 100,
         height: 100,
@@ -35,7 +30,7 @@ export default function Moi() {
     const classes = useStyles();
 
     return (
-        <div className="App-body">
+        <>
             <div className={classes.wrapper}>
                 <Slide direction="right" timeout={500} in={true} mountOnEnter unmountOnExit>
                     <Paper elevation={4} className={classes.paper}>
@@ -53,6 +48,6 @@ export default function Moi() {
                     </Paper>
                 </Slide>
             </div>
-        </div>
+        </>
     );
 }
