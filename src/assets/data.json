@@ -1,35 +1,62 @@
 {
-    "products": [
-        {
-            "name": "product1",
-            "price": "100",
-            "description": "dkdkdkdk"
-        },
-        {
-            "name": "product2",
-            "price": "100",
-            "description": "dkdkdkdk"
-        },
-        {
-            "name": "product3",
-            "price": "100",
-            "description": "dkdkdkdk"
-        },
-        {
-            "name": "product4",
-            "price": "100",
-            "description": "dkdkdkdk"
-        },
-        {
-            "name": "product4",
-            "price": "100",
-            "description": "dkdkdkdk"
-        },
-        {
-            "name": "product4",
-            "price": "100",
-            "description": "dkdkdkdk"
-        }
-
-    ]
+   "products": [
+      {
+         "name": "product1",
+         "price": "27,30€",
+         "description": "dkdkdkdk"
+      },
+      {
+         "name": "product2",
+         "price": "23,50€",
+         "description": "dkdkdkdk"
+      },
+      {
+         "name": "product3",
+         "price": "22,40€",
+         "description": "dkdkdkdk"
+      },
+      {
+         "name": "product4",
+         "price": "19,40€",
+         "description": "dkdkdkdk"
+      },
+      {
+         "name": "product4",
+         "price": "40,50€",
+         "description": "dkdkdkdk"
+      },
+      {
+         "name": "product4",
+         "price": "23,80€",
+         "description": "dkdkdkdk"
+      }
+   ],
+   "homeCards": [
+      {
+         "header": "Welcome",
+         "text": "This text is coming from a json file"
+      },
+      {
+         "header": "To",
+         "text": "These are the cards for the Home page"
+      },
+      {
+         "header": "My Website",
+         "text": "This component is called SmallCard"
+      }
+   ],
+   "aboutCards": [
+      {
+         "header": "Something",
+         "text": "This text is coming from a json file"
+      },
+      {
+         "header": "About",
+         "text": "These are the cards for the About Us page"
+      },
+      {
+         "header": "Us",
+         "text": "This component is called SmallCard"
+      }
+   ]
 }

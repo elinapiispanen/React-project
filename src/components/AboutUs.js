@@ -1,6 +1,6 @@
 import { Typography } from '@material-ui/core'
 import React from 'react'
-import Moi from './config/Moi'
+import SlidingCards from './config/SlidingCards'
 import Grid from '@material-ui/core/Grid';
 
 function AboutUs() {
@@ -18,7 +18,7 @@ function AboutUs() {
 
             </Grid>
             <Grid item xs={4}>
-              <Moi />
+              <SlidingCards/>
             </Grid>
             <Grid item xs={4}>
 

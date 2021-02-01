@@ -37,8 +37,7 @@ export default function ImageGrid() {
               >
                 <CardMedia
                   image={img}
-                  title="Paella dish"
-                  height="140"
+                  height="160"
                   component="img"
                 />
                 <CardContent>
@@ -51,6 +50,7 @@ export default function ImageGrid() {
                 </CardContent>
                 <CardActions>
                   <Button color="primary" variant="contained" fullWidth size="small"> Learn More </Button>
+                      <Button color="primary" variant="contained" fullWidth size="small"> Add to favorites </Button>
                 </CardActions>
               </Card>
             </Grid>

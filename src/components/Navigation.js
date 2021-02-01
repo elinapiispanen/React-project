@@ -4,6 +4,7 @@ import Tab from '@material-ui/core/Tab';
 import Grid from '@material-ui/core/Grid';
 import SentimentSatisfiedAltIcon from '@material-ui/icons/SentimentSatisfiedAlt';
 import { Link } from 'react-router-dom';
+import { AppBar, Icon, Toolbar } from '@material-ui/core';
 
 function Navigation() {
 
@@ -14,7 +15,8 @@ function Navigation() {
 
     return (
         <>
-
+<AppBar position='sticky'>
+   
             <Tabs
                 value={value}
                 onChange={handleChange}
@@ -26,8 +28,8 @@ function Navigation() {
                 <Tab label="Products" component={Link} to='/prod' />
                 <Tab label="About us" component={Link} to='/about' />
             </Tabs>
-
-
+        
+          </AppBar>
         </>
     )
 }
