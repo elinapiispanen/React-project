@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
    },
    paper: {
       margin: 10,
-      padding: 20,
    }
 }));
 

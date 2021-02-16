@@ -41,6 +41,8 @@ body {
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .About-header {
@@ -66,18 +68,16 @@ body {
 }
 
 .Products-header {
-    background-color: #282c34;
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(60px + 2vmin);
+    font-size: calc(10px + 2vmin);
     color: white;
 }
 
 .Products-body {
-    background-color: #282c34;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -85,6 +85,7 @@ body {
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    margin-bottom: 20px;
 }
 
 .App-footer {
@@ -112,8 +113,6 @@ body {
 
 }
 
-
-
 .Form-container {
    border-radius: 7px;
     background-color: transparent;
@@ -133,6 +132,14 @@ input {
 textarea {
     color: white !important;
      font-size: 22px !important;
+}
+
+.card {
+   box-shadow: 7px 7px 7px gray !important;
+}
+
+.Home-card {
+   width: 80%;
 }
 
 @keyframes App-logo-spin {

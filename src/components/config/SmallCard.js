@@ -10,7 +10,8 @@ export default function SmallCard(props) {
 
    return (
       <div>
-         <Card>
+         <Card
+         className="card">
             <CardContent>
 
                <Typography className="typography" gutterBottom>
@@ -25,6 +26,7 @@ export default function SmallCard(props) {
                <Typography variant="body2" component="p">
 
                </Typography>
+               <img />
             </CardContent>
             <CardActions>
                <Button size="small"></Button>

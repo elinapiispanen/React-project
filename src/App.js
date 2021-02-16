@@ -8,11 +8,13 @@ import AboutUs from './components/AboutUs'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Products from './components/Products';
 import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
    return (
       <BrowserRouter>
          <MuiThemeProvider theme={theme}>
+            <CssBaseline/>
             <div className="App">
                <Navigation />
                <Switch>
@@ -42,7 +44,10 @@ const theme = createMuiTheme({
       height: 300,
       minWidth: 200,
       minHeight: 250,
-      backgroundColor: 'white'
+      backgroundColor: 'white',
+      shadowOffset: { width: 0, height: 0 },
+      shadowOpacity: 0.5,
+      shadowRadius: 10,
    },
    redbutton: {
       margin: 10,
@@ -72,7 +77,6 @@ const theme = createMuiTheme({
       position: 'relative',
       padding: 50,
    },
-
 });
 
 export default App;

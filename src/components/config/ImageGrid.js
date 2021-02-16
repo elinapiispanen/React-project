@@ -6,7 +6,6 @@ import Collapse from "@material-ui/core/Collapse";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Grid from "@material-ui/core/Grid";
 import img from "../../assets/images/slide1.jpg";
-import data from "../../assets/data.json";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
@@ -16,8 +15,11 @@ import CardMedia from "@material-ui/core/CardMedia";
 import SwipeableViews from 'react-swipeable-views';
 import Fade from '@material-ui/core/Fade';
 
-export default function ImageGrid() {
+export default function ImageGrid(props) {
   const [showIcon, setShowIcon] = useState(false);
+   const {indexOfFirstProduct, indexOfLastProduct} = props;
+   const prods = props.products;
+   const currentProducts = prods.slice(indexOfFirstProduct, indexOfLastProduct)
 
   return (
     <>
@@ -27,11 +29,12 @@ export default function ImageGrid() {
         direction="row"
         spacing={3}
       >
-        {data.products.map((product, index) => {
+           {currentProducts.map((product, index) => {
           return (
 
-            <Grid item xs={4}>
+            <Grid item xs={3}>
               <Card
+              className="card"
                 onMouseEnter={() => setShowIcon(true)}
                 onMouseLeave={() => setShowIcon(false)}
               >
